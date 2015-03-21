@@ -3,7 +3,7 @@
 SITES_ENABLED="/sites-enabled"
 
 # if the default
-if [[ ! -f $SIATES_ENABLED/000-default.conf ]]; then
+if [[ ! -f $SITES_ENABLED/000-default.conf ]]; then
   cp -L /etc/apache2/sites-enabled/000-default.conf /sites-enabled
 fi
 
