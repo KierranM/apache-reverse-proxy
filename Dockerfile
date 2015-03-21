@@ -5,6 +5,7 @@ ENV DEBIAN_FRONTEND noninteractive
 # install the required packages
 RUN apt-get update && sudo apt-get install -y \
       build-essential \
+      apache2 \
       libapache2-mod-proxy-html \
       libxml2-dev
 
