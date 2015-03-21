@@ -2,6 +2,8 @@ FROM phusion/baseimage:0.9.16
 MAINTAINER Kierran McPherson <kierranm@gmail.com>
 ENV DEBIAN_FRONTEND noninteractive
 
+EXPOSE 80
+
 # install the required packages
 RUN apt-get update && sudo apt-get install -y \
       build-essential \
