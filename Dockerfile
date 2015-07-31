@@ -8,7 +8,6 @@ EXPOSE 80
 RUN apt-get update && sudo apt-get install -y \
       build-essential \
       apache2 \
-      apache2-common \
       libapache2-mod-proxy-html \
       libxml2-dev
 
