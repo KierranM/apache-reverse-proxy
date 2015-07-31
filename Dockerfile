@@ -8,6 +8,7 @@ EXPOSE 80
 RUN apt-get update && sudo apt-get install -y \
       build-essential \
       apache2 \
+      apache2-common \
       libapache2-mod-proxy-html \
       libxml2-dev
 
@@ -22,7 +23,8 @@ RUN a2enmod proxy \
 			headers \
 			proxy_balancer \
 			proxy_connect \
-			proxy_html
+			proxy_html \
+      ssl
 
 # add the startup config file
 RUN mkdir -p /etc/my_init.d
